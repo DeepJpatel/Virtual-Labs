@@ -1,5 +1,12 @@
 Firewall basics in a (Linux) virtual lab environment. (June 13, 2025)
 
+Objectives:
+Define a Firewall.
+Describe the practical applications of a firewall. 
+Use iptables to restrict network traffic on a Linux host.
+Use Nmap to validate a host-based firewall implementation.
+
+
 Part 1: Configure an iptables Firewall 
         1. Created a fictional network to test the iptables firewall
         2. rules: sudo iptables -A INPUT -s 10.0.0.1 -p tcp --dport 22 -j ACCEPT , sudo iptables -A INPUT -s 10.0.0.0/24 -p tcp --dport 22 -j DROP
